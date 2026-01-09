@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Fonts */
+  --fuente-base: 'Outfit', sans-serif;
+  --fuente-titulos: 'Winky Sans', sans-serif;
+  /* Font Weights */
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    /* Font Sizes */
+    --fs-xxs: .5625rem;
+    --fs-xs: .6875rem;
+    --fs-s: .8125rem;
+    --fs-m: 1rem;
+    --fs-l: 1.125rem;
+    --fs-xl: 1.5rem;
+    --fs-xxl: 2rem;
+    --fs-xxxl: 2.5rem;
+
+    /* Brand Colors */
+    --color-principal: #110e55;
+    --color-secundario: #8c52ff;
+    --color-terciario: black;
+    --color-cuaternario: white;
+}
+
+body #root {
+  background-color: transparent;
+  width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.082) 3px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.082) 3px, transparent .1px),
+    linear-gradient(135deg, #dabced 0%, #a9c9ff 50%, #adffc6 100%);
+  background-size: 50px 50px, 50px 50px, auto;
+  background-attachment: fixed;
+  font-family: var(--fuente-base);
+  font-weight: var(--fw-light);
+  font-size: var(--fs-m);
+  color: var(--color-terciario);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fuente-titulos);
+  font-weight: var(--fw-bold);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+
