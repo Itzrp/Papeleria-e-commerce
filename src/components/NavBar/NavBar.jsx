@@ -1,6 +1,7 @@
 import './NavBar.css'
 import { Logo } from "./Logo"
 import { CartWidget } from '../CartWidget/CartWidget'
+import { NavLink } from 'react-router-dom'
 
 export const NavBar = () =>{
 
@@ -17,25 +18,31 @@ export const NavBar = () =>{
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <NavLink to="/" className="nav-link">Inicio</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">🔥Ofertas🔥</a>
+                            <NavLink to="/category/ofertas" className="nav-link">🔥Ofertas🔥</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Papelería y Oficina</a>
+                            <NavLink to="/category/papeleria-y-oficina" className="nav-link">Papelería y Oficina</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Servicios</a>
+                            <NavLink to="/category/servicios" className="nav-link">Servicios</NavLink>
                         </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Complementos
                         </a>
                         <ul className="dropdown-menu">
-                            <li><a className="dropdown-item" href="#">Tecnología y soporte</a></li>
-                            <li><a className="dropdown-item" href="#">Arte y Mercería</a></li>
-                            <li><a className="dropdown-item" href="#">Snacks y Bebidas</a></li>
+                            <li>
+                                <NavLink to="/category/tecnologia-y-soporte" className="nav-link">Tecnología y soporte</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/category/arte-y-merceria" className="nav-link">Arte y Mercería</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/category/snacks-y-bebidas" className="nav-link">Sancks y Bebidas</NavLink>
+                            </li>
                         </ul>
                         </li>
                     </ul>

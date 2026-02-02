@@ -11,27 +11,39 @@
   --fuente-base: 'Outfit', sans-serif;
   --fuente-titulos: 'Winky Sans', sans-serif;
   /* Font Weights */
-    --fw-light: 300;
-    --fw-regular: 400;
-    --fw-medium: 500;
-    --fw-semibold: 600;
-    --fw-bold: 700;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-dbold: 800;
 
-    /* Font Sizes */
-    --fs-xxs: .5625rem;
-    --fs-xs: .6875rem;
-    --fs-s: .8125rem;
-    --fs-m: 1rem;
-    --fs-l: 1.125rem;
-    --fs-xl: 1.5rem;
-    --fs-xxl: 2rem;
-    --fs-xxxl: 2.5rem;
+  /* Font Sizes */
+  --fs-xxs: .5625rem;
+  --fs-xs: .6875rem;
+  --fs-s: .8125rem;
+  --fs-m: 1rem;
+  --fs-l: 1.125rem;
+  --fs-xl: 1.5rem;
+  --fs-xxl: 2rem;
+  --fs-xxxl: 2.5rem;
+  --fs-xxxxl: 4rem;
 
-    /* Brand Colors */
-    --color-principal: #110e55;
-    --color-secundario: #8c52ff;
-    --color-terciario: black;
-    --color-cuaternario: white;
+  /* Brand Colors */
+  --color-principal: #110e55;
+  --color-secundario: #8c52ff;
+  --color-secundarioB: #646cff;
+  --color-secundarioBO: #535bf2;
+  --color-terciario: black;
+  --color-cuaternario: white;
+  --offer-color: #ff4757;
+  --color-badge: #686767ab;
+  --color-text-light: #585555;
+  --text-light: #95a5a6;
+  --border-colorPrincipal: #dadada86;
+  --light-background: #e9ecef;
+  --colorSuccess: green;
+  --colorBad: red;
 }
 
 body #root {
@@ -56,10 +68,54 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--fuente-titulos);
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-dbold);
   margin-top: 0;
   margin-bottom: 1rem;
   line-height: 1.2;
 }
 
+.status-container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  min-height: calc(100vh - 6.25rem); 
+  text-align: center;
+  color: var(--color-terciario);
+  font-family: var(--fuente-base);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-l)
+}
+
+.status-container h1{
+  padding: .625rem;
+  text-align: center;
+  font-family: var(--fuente-titulos);
+  font-weight: var(--fw-bold);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  padding: .625rem;
+  color: var(--color-principal);
+}
+
+.btn-back {
+  margin-top: 1.25rem;
+  padding: .625rem 1.25rem;
+  background-color: var(--color-secundarioB);
+  color: var(--color-cuaternario);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-back {
+    margin-top: 1.25rem;
+    padding: .625rem 1.25rem;
+    background-color: var(--color-secundarioB);
+    color: var(--color-cuaternario);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
