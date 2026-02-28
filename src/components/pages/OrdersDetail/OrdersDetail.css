@@ -1,0 +1,23 @@
+.top-container{
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+    background-color: var(--color-secundarioBO) !important;
+}
+
+.top-container small {
+    font-family: var(--fuente-base);
+}
+
+.content-div div p {
+    font-family: var(--fuente-base);
+    font-size: var(--fs-m);
+}
+
+.prods-style{
+    font-family: var(--fuente-base);
+    font-size: var(--fs-m);
+}
+
+.change-color{
+    color: var(--color-secundarioB) !important;
+}

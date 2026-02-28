@@ -1,0 +1,37 @@
+.form-container h2{
+    font-family: var(--fuente-titulos); 
+    font-weight: var(--fw-bold);
+    color: var(--color-principal);
+}
+
+.form-style label{
+    font-family: var(--fuente-base); 
+    font-weight: var(--fw-bold);
+    color: var(--color-secundarioBO);
+    font-size: var(--fs-m);
+}
+
+.form-style input {
+    font-family: var(--fuente-base);
+}
+
+.resume-container h4 {
+    font-family: var(--fuente-titulos); 
+    font-weight: var(--fw-bold);
+    color: var(--color-principal);
+}
+
+.items-container {
+    max-height: 18.75rem;
+}
+
+.item-details span {
+    font-family: var(--fuente-base); 
+    font-weight: var(--fw-regular);
+    color: var(--color-terciario);
+    font-size: var(--fs-m);
+}
+
+.resume-container .total {
+    color: var(--color-secundarioBO);
+}

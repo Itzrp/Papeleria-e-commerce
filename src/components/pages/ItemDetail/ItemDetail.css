@@ -132,3 +132,35 @@
     letter-spacing: .0313rem;
     cursor: not-allowed; 
 }
+
+
+.btn-personalizado {
+    border: 2px solid var(--color-secundario);
+    background-color: var(--color-cuaternario);
+    color: var(--color-secundario);
+    letter-spacing: .5px;
+}
+
+.btn-personalizado:hover{
+    background-color: var(--color-green-light);
+    color: var(--color-cuaternario);
+    border: 2px solid var(--color-green-light);
+    color: var(--color-secundario);
+}
+
+.continue {
+    background-color: var(--color-text-light);
+    color: var(--color-cuaternario);
+    border: 2px solid var(--color-text-light);
+}
+
+.continue:hover {
+    background-color: var(--color-badge);
+    border: 2px solid var(--color-badge);
+}
+
+.post-buttons {
+    display: flex;
+    gap: .625rem;
+}
+

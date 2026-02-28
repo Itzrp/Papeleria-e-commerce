@@ -1,7 +1,19 @@
+
+.header-container h1{
+  padding: .9375rem;
+  margin-top: .3125rem;
+  margin-bottom: .3125rem;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-xl);
+  color: var(--color-principal);
+}
+
 .list-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.25rem;
-  padding: 2.5rem;
+  padding: .9375rem 2.5rem 2.5rem 2.5rem;
 }

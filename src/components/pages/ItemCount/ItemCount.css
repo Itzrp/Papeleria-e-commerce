@@ -50,9 +50,8 @@
     font-size: var(--fs-m);
     background-color: var(--color-principal); 
     color: var(--color-cuaternario);
-    text-transform: uppercase;
     cursor: pointer;
-    border: none;
+    border: 1px solid var(--color-principal);
     border-radius: 8px;
     letter-spacing: .0313rem;
     transition: background-color 0.3s;
@@ -60,4 +59,5 @@
 
 .btn-add-to-cart:hover {
     background-color: var(--color-secundarioB);
+    border: 1px solid var(--color-secundarioB);
 }

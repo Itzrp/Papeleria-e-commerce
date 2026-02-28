@@ -1,0 +1,78 @@
+.card {
+    background-color: var(--color-cuaternario) !important;
+    border-radius: 12px;
+}
+
+.card h1{
+    padding: .625rem;
+    text-align: center;
+    font-family: var(--fuente-titulos);
+    font-weight: var(--fw-bold);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    padding: .625rem;
+    color: var(--color-principal);
+}
+
+.image-style{
+    font-size: var(--fs-xl);
+    line-height: normal;
+}
+
+.modified {
+    margin-bottom: .125rem;
+    text-decoration: none;
+    height: auto;
+}
+
+.fw-regular {
+    font-weight: var(--fw-regular);
+}
+
+.delete-item {
+    background-color: var(--offer-color) !important;
+    font-family: var(--fuente-base) !important;
+    font-weight: var(--fw-semibold) !important;
+    font-size: var(--fs-s) !important;
+    color: var(--color-cuaternario) !important;
+    letter-spacing: 1px;
+}
+.delete-item i{
+    color: var(--color-cuaternario) !important;
+}
+
+.total {
+    color: var(--color-principal);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-xxxl) ;
+}
+
+.btn-terminar-compra{
+    text-transform: none !important;
+    background-color: var(--color-green-light) !important;
+    border: 2px solid var(--color-green-light) !important;
+    color: var(--color-secundario) !important;
+}
+
+
+.btn-terminar-compra:hover{
+    background-color: var(--color-secundario) !important;
+    border: 2px solid var(--color-secundario) !important;
+    color: var(--color-cuaternario) !important;
+}
+
+.btn-vaciar-carrito{
+    text-transform: none !important;
+    width: auto !important;
+    background-color: var(--color-cuaternarios) !important;
+    border: 2px solid var(--colorBad) !important;
+    color: var(--colorBad) !important;
+}
+
+
+.btn-vaciar-carrito:hover{
+    background-color: var(--colorBad) !important;
+    border: 2px solid var(--colorBad) !important;
+    color: var(--color-cuaternario) !important;
+}

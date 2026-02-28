@@ -5,3 +5,13 @@ i {
 .badgen-color {
     background-color: var(--color-principal);
 }
+
+.btn-clean-border {
+    border: none !important;
+}
+
+.btn-clean-border:focus, .btn-clean-border:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}

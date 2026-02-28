@@ -1,21 +1,30 @@
+import { useState, useContext } from 'react'
 import { ItemCount } from '../ItemCount/ItemCount'
 import './ItemDetail.css'
+import { Link } from 'react-router-dom'
+import { Slide, toast } from 'react-toastify'
+import { CartContext } from "../../../context/CartContext/CartContext"
+import { categoryNames } from '../../../utils/categories'
 
 const ItemDetail = ({product}) => {
 
-    const categoryNames = {
-        "papeleria-y-oficina": "Papelería y Oficina",
-        "servicios": "Servicios",
-        "tecnologia-y-soporte": "Tecnología y Soporte",
-        "arte-y-merceria": "Arte y Mercería",
-        "snacks-y-bebidas": "Snacks y Bebidas"
-    }
+    const [quantityAdded, setQuantityAdded] = useState(0)
+
+    const {addToCart} = useContext(CartContext)
 
     const displayCategory = categoryNames[product.category] || product.category
 
-    const addToCart = (quantity) => {
-        console.log(`Se agregó ${quantity} ${product.name} al carrito`);
-        
+    const handleOnAdd = (quantity) => {
+        setQuantityAdded(quantity)
+        addToCart(product, quantity)
+        toast.success(`¡Agregaste ${quantity} ${product.name} al carrito!`, {
+            position: "top-center", 
+            autoClose: 2000,          
+            hideProgressBar: true,    
+            closeButton: false,    
+            className: "toastify-style",
+            transition: Slide
+        });
     }
 
     return (
@@ -52,12 +61,28 @@ const ItemDetail = ({product}) => {
                 </div>
 
                 <div>
-                    {product.stock >0
+                    {
+                        quantityAdded > 0
+                        ? (
+                            <div className="post-buttons">
+                                <Link to='/cart'>
+                                    <button className="btn-add-to-cart btn-personalizado">
+                                        Terminar mi compra
+                                    </button>
+                                </Link>
+                                <Link to='/'>
+                                    <button className="btn-add-to-cart btn-personalizado continue">
+                                        Seguir comprando
+                                    </button>
+                                </Link>
+                            </div>
+                        )
+                        : product.stock >0
                         ? (
                             <ItemCount
                                 stock = {product.stock}
                                 initial = {1}
-                                addToCart = {addToCart}
+                                addToCart = {handleOnAdd}
                             />
                         )
                         : (

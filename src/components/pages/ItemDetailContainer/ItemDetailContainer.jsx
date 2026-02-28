@@ -11,7 +11,7 @@ const ItemDetailContainer = () =>{
 
     useEffect(() => {
         setLoading(true)
-        services.mocks.productos.getProduct(params.itemId)
+        services.firestore.productos.getProduct(params.itemId)
         .then((response) => {
             if (response.success) {
                 setProduct(response.message)

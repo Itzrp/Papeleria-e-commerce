@@ -29,6 +29,7 @@
   padding: .1875rem .9375rem  ; 
   width: 15rem;
   color: var(--color-terciario);
+    font-family: var(--fuente-base);
   box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
 }
 
@@ -42,10 +43,15 @@
   color: var(--color-secundario);
   font-weight: var(--fw-medium);
   border-color: var(--color-secundario);
+    font-family: var(--fuente-base);
 }
 
 .navbar .btn-search:hover {
-  background-color: #a2cd68;
+  background-color: var(--color-green-light);
   color: var(--color-cuaternario);
   border-color: none
+}
+
+li {
+  font-family: var(--fuente-base);
 }
